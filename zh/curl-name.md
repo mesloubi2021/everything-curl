@@ -1,43 +1,27 @@
-## The name
+## 项目名称
 
-Naming things is hard.
+对于开发者而言，起名确实是一件让人煞费头脑的事情。
 
-The tool was about uploading and downloading data specified with a URL. It
-would show the data (by default). The user would "see" the URL perhaps and
-"see" then spelled with the single letter 'c'. It was also a client-side
-program, a URL client. So 'c' for Client and URL: **cURL**.
+这个工具的作用是根据一条指定的URL去下载或者上传数据。默认状态下它还能会将数据展示出来，这让我联想到了字符'c'。因为它本质是就是一款客户端程序(client-side)，一款负责URL的客户端。所以'c'代表着客户端。于是我们决定把它命名为：**cURL**。
 
-Nothing more was needed so the name was selected and we never looked back
-again.
+这个名字干净清爽，言简意赅。我们会一直使用下去，不再做改动。
 
-Later on, someone suggested that curl could actually be a clever "recursive
-acronym" (where the first letter in the acronym refers back to the same word):
-"Curl URL Request Library"
+有趣的是，有人为这个名字提出了一种巧妙绝伦的藏头隐喻！把每一个字符暗含成这样的词汇：Curl URL Request Library！
 
-While that is awesome, it was actually not the original thought. We sort of
-wish we were that clever though…
+虽然这个藏头隐喻非常的巧妙，但它其实跟命名过程并任何没有关系。不过我们还是希望我们也能如此聪明。
 
-There are and were other projects using the name curl in various ways, but we
-were not aware of them by the time our curl came to be.
+事实上，有一些其他项目也被命名为了curl。但是在我们为项目命名的时候，我们并不了解这一情况。
 
-### Pronunciation
+### 发音
 
-Most of us pronounce "curl" with an initial k sound, just like the English
-word curl.  It rhymes with words like girl and earl. Merriam Webster has a
-[short WAV file](https://media.merriam-webster.com/soundc11/c/curl0001.wav) to
-help.
+我们大多数人对于'curl'的发音，会有一个初始k音，就像英语单词curl一样。它很类似于'girl'或者'earl'的发音.《韦氏词典》中有一个很短的[音频](https://media.merriam-webster.com/soundc11/c/curl0001.wav)来帮助你发音。
 
-### Confusions and mixups
+### 困惑
 
-Soon after curl was first created another "curl" appeared that makes a
-programming language. That curl still [exists](http://www.curl.com).
+curl刚创建不久，就出现了另一个“curl”，它是一种编程语言。并且这么语言仍然存在，[这里](http://www.curl.com)可以寻找到它。
 
-Several libcurl bindings for various programming languages use the term "curl"
-or "CURL" in part or completely to describe their bindings, so sometimes
-you will find users talking about curl but targeting neither the command-line tool
-nor the library that is made by this project.
+有的编程语言或者第三方库使用'curl'或者'CURL'来作为它们自身的某种描述术语。所以你可能会听见有人在谈论'curl'，但是却跟我们的命令行工具与以及库没有任何关系。
 
-### As a verb
+### 理解为一个动作
 
-'to curl something' is sometimes used as a reference to use a non-browser tool
-to download a file or resource from a URL.
+'curl一下'有时候可以被理解为通过一条URL去下载文件或者资源，而没有使用浏览器。
