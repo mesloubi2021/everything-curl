@@ -1,61 +1,33 @@
-## What does curl do?
+## curl可以做什么？
 
-cURL is a project and its primary purpose and focus is to make two products:
+cURL是一个项目，它的主要目的和重点是生成下列两个产品：
 
-- curl, the command-line tool
+- curl命令行工具
 
-- libcurl the transfer library with a C API
+- libcurl库，该库提供C语言的API
 
-Both the tool and the library do Internet transfers for resources specified as
-URLs using Internet protocols.
+命令行工具与libcurl库都可以通过网络协议对指定的URL进行网络数据传输。
 
-Everything and anything that is related to Internet protocol transfers can be
-considered curl's business. Things that are not related to that should be
-avoided and be left for other projects and products.
+任何与网络协议传输相关的东西都可以视为curl的业务。与之无关的内容则不属于curl的业务范畴，应由其他项目或工程处理。
 
-It could be important to also consider that curl and libcurl try to avoid
-handling the actual data that is transferred. It has, for example, no knowledge
-about HTML or anything else of the content that is popular to transfer over
-HTTP, but it knows all about how to transfer such data over HTTP.
+非常重要的一点是，命令行工具与libcurl库都不会涉及到传输数据的解析。举例说明：它并不知道传输的数据是HTML或是其他类型的数据，更不会像浏览器一样解析数据进行渲染，简而言之，它不会对数据进行任何处理，但是它知道如何通过HTTP协议去传输这些数据。
 
-Both products are frequently used not only to drive thousands or millions of
-scripts and applications for an Internet connected world, but they are also
-widely used for server testing, protocol fiddling and trying out new things.
+这两款产品不仅仅可以用来驱动数以万计的脚本与应用的网络功能，而且还被广泛的应用于服务器测试，协议的改编或者其他相关的事情上。
 
-The library is used in every imaginable sort of embedded device where Internet
-transfers are needed: car infotainment, televisions, Blu-Ray players, set-top
-boxes, printers, routers, game systems, etc.
+libcurl库可以被应用在所有具有网络传输功能的嵌入式设备中。如：车载设备，智能电视，蓝光播放器，机顶盒，打印机，路由器，游戏机等等。
 
-### Command line tool
+### 命令行工具
 
-Running curl from the command line was natural and Daniel never considered
-anything else than that it would output data on stdout, to the terminal, by
-default. The "everything is a pipe" mantra of standard Unix philosophy was
-something Daniel believed in. curl is like 'cat' or one of the other Unix tools;
-it sends data to stdout to make it easy to chain together with other tools to do
-what you want. That's also why virtually all curl options that allow reading from
-a file or writing to a file, also have the ability to select doing it to stdout
-or from stdin.
+curl命令行工具的用法非常的自然，并且在能把数据以标准输出格式输出到终端上。丹尼尔非常笃信UNIX体系中“万物皆管道”的思想。标准格式输出的数据，使得与其他工具一起执行所需的操作变得容易起来。这也是为什么几乎所有curl选项都支持文件的读写，并且可以在“标准输出格式”与“标准输入格式”之间进行选择。
 
-Following that style of what Unix command-line tools worked, it was also never
-any question about that it should support multiple URLs on the command line.
+遵循Unix命令行工具的使用风格，它同样也支持在命令行上同时处理多条URL。
 
-The command-line tool is designed to work perfectly from scripts or other
-automatic means. It doesn't feature any other GUI or UI other than mere text
-in and text out.
+curl命令行工具是专门为脚本与其他自动化工具而设计的，以后也不会向GUI或者UI方面发展，它仅仅具有简单的文本输入与输出。
 
-### The library
+### libcurl库
 
-While the command-line tool came first, the network engine was ripped out and
-converted into a library during the year 2000 and the concepts we still have
-today were introduced with libcurl 7.1 in August 2000. Since then, the command
-line tool has been a thin layer of logic to make a tool around the
-library that does all the heavy lifting.
+当命令行工具诞生后，curl项目的“网络引擎”从项目中被拿掉了，并且我们把它(“网络引擎”)打包成了一个库，这就是在2000年8月发布的libcurl7.1。自此，所有的核心业务都编写在libcurl之中，而命令行工具变成了一个为libcurl服务的业务层工具。
 
-libcurl is designed and meant to be available for anyone who wants to add
-client-side file transfer capabilities to their software, on any platform, any
-architecture and for any purpose. libcurl is also extremely liberally licensed
-to avoid that becoming an obstacle.
+libcurl被设计为了一款通用的跨平台网络库。
 
-libcurl is written in traditional and conservative C. Where other languages
-are preferred, people have created libcurl [bindings](bindings.md) for them.
+libcurl是用古老的C语言编写的。志愿者们为libcurl编写的其他编程语言接口可以在[绑定](bindings.md)中查阅。
