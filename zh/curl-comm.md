@@ -1,32 +1,9 @@
-## Project communication
+## 项目沟通
 
-cURL is an Open Source project consisting of voluntary members from all over
-the world, living and working in a large number of the world's time zones. To
-make such a setup actually work, communication and openness is key. We keep
-all communication public and we use open communication channels. Most
-discussions are held on mailing lists, we use bug trackers where all issues
-are discussed and handled with full insight for everyone who cares to look.
+cURL是一个由世界各地的志愿者们共同维护的开源项目。有效的沟通与开放的精神是项目能够稳定发展的关键所在。我们一贯坚持开放性的沟通机制。许多关于项目的讨论都是在邮件列表中进行的(类似于Git邮件列表的工作流方式)，我们会对bug进行定位，让每个人都可以看见对于某一问题的讨论以及处理方式，让所有人都可以洞悉它。
 
-It is important to realize that we are all jointly taking care of the project,
-we fix problems and we add features. Sometimes a regular contributor grows
-bored and fades away, sometimes a new eager contributor steps out from the
-shadows and starts helping out more. To keep this ship going forward as well
-as possible, it is important that we maintain open discussions and that's one
-of the reasons why we frown upon users who take discussions privately or try
-to e-mail individual team members about development issues, questions,
-debugging or whatever.
+你要认识到，我们共同维护着这个项目，我们一起修复bug，一起参与项目迭代。有时，一个我们很熟悉的志愿者会渐渐的从我们的视线中消失。有时，一个很热切的志愿者会突然出现在我们视线之中。为了能使项目尽可能的走的更远，坚持开放性的讨论原则就显得尤为重要。所以我们不赞成私下讨论项目的各种行为。
 
-In this day and age, mailing lists may be considered sort of the old style of
-communication—no fancy web forums or similar. Using a mailing list is
-therefore becoming an art that isn't practised everywhere and may be a bit
-strange and unusual to you. But fear not. It is just about sending emails to
-an address that then sends that e-mail out to all the subscribers. Our mailing
-lists have at most a few thousand subscribers. If you are mailing for the first
-time, it might be good to read a few old mails first to get to learn the
-culture and what's considered good practice.
+在这个时代，邮件列表的工作方式与流行的论坛相比已经略显陈旧。邮件列表的工作方式已然成为了一门艺术，并不是随处都可以练习的，你可能会对这种工作方式感到有些陌生。但是不要担心，它仅仅是向一个地址发送一封邮件，然后将邮件转发给所有订阅者。我们的邮件列表，订阅量的最大值在几千左右。如果你是第一次发邮件，最好先读几封旧邮件以对其进行一定的了解，这是最好的练习方式。
 
-The mailing lists and the bug tracker have changed hosting providers a few
-times and there are reasons to suspect it might happen again in the future. It
-is just the kind of thing that happens to a project that lives for a long time.
-
-A few users also hang out on IRC in the #curl channel on freenode.
+邮件列表与bug定位服务托管供应平台已经改变了数次，并且有理由怀疑它可能在将来再次发生改变。这个问题
