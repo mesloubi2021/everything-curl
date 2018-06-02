@@ -1,115 +1,70 @@
-### Mailing list etiquette
+### 邮件列表使用规范
 
-Like many communities and subcultures, we have developed guidelines and rules
-of what we think is the right way to behave and how to communicate on the
-mailing lists. The [curl mailing list
-etiquette](https://curl.haxx.se/mail/etiquette.html) follows the style of
-traditional Open Source projects.
+与许多团体一样，我们也有开发指南与邮件列表的使用行为规范。[curl邮件列表使用规范](https://curl.haxx.se/mail/etiquette.html)遵循了传统开源项目的风格。
 
-#### Do not mail a single individual
+#### 不要向个人发送邮件
 
-Many people send one question directly to one person. One person gets many mails, and
-there is only one person who can give you a reply. The question may be
-something that other people also want to ask. These other people have
-no way to read the reply but to ask the one person the question. The one
-person consequently gets overloaded with mail.
+许多人直接向一个人提问。这个人会收到很多邮件，只有他自己对这些邮件进行答复。并且这些问题中存在重复的现象，但是后续的提问者并不能阅读关于某个问题的解答，于是他们会继续提出相同的问题，这时回复者的邮件列表会被塞满。
 
-If you really want to contact an individual and perhaps pay for his or her
-services, by all means go ahead, but if it's just another curl question, take
-it to a suitable list instead.
+如果你真的就是想联系一个人，或者为他或她的服务付费，那么当然可以向个人发送邮件。但如果这只是一个关于curl的问题，那就把发送到一个合适的邮件列表上吧。
 
-#### Reply or new mail
+#### 发送新邮件
 
-Please do not reply to an existing message as a shortcut to post a message to
-the lists.
+请不要贪图快捷直接点击回复邮件的按钮。
 
-Many mail programs and web archivers use information within mails to keep them
-together as "threads", as collections of posts that discuss a certain
-subject. If you don't intend to reply on the same or similar subject, don't
-just hit reply on an existing mail and change subject; create a new mail.
+许多邮件的客户端都会根据邮件的内容将邮件分门别类，看起来就像一个串联的线路，作为一个讨论特定问题的合集。如果你并没有参与某一问题的想法，请不要点击现有的回复邮件按钮。而是为你的问题创建一个新的邮件。
 
-#### Reply to the list
+#### 发送至邮件列表
 
-When replying to a message from the list, make sure that you do "group reply"
-or "reply to all", and not just reply to the author of the single mail you
-reply to.
+当你回复一个来自邮件列表上的消息时，要确保你的回复可以让很多人收到，不要只给作者发送一封私人的邮件。
 
-We are actively discouraging replying back to the single person by setting the
-Reply-To: field in outgoing mails back to the mailing list address, making it
-harder for people to mail the author only by mistake.
+我们正通过将“回复”与“发送邮件”中的地址字段设置为“邮件列表”地址，从而使人们更难以误发作者的邮件。
 
-#### Use a sensible subject
+#### 选取恰当的主题
 
-Please use a subject of the mail that makes sense and that is related to the
-contents of your mail. It makes it a lot easier to find your mail afterwards
-and it makes it easier to track mail threads and topics.
+请根据邮件的内容选取一个合适的主题。这样会让寻找你的邮件容易许多，可以更方便的根据主题寻找到相应的内容。
 
-#### Do not top-post
+#### 不要置顶回复
 
-If you reply to a message, don't use top-posting. Top-posting is when you
-write the new text at the top of a mail and you insert the previous quoted
-mail conversation below. It forces users to read the mail in a backwards order
-to properly understand it.
+如果你需要回复一条消息，那么请不要采取置顶回复的风格。置顶回复就是：当你在邮件的顶部编写文本时，在内容的下方插入之前的引用的邮件对话，这种方式会迫使用户以相反的顺序阅读邮件。
 
-This is why top posting is so bad:
+为什么置顶回复如此糟糕：
 
-    A: Because it messes up the order in which people normally read text.
-    Q: Why is top-posting such a bad thing?
-    A: Top-posting.
-    Q: What is the most annoying thing in e-mail?
+	A：因为它打乱了人们阅读文本的顺序。
+	B：为什么置顶回复风格不是很好？
+	A：置顶回复。
+	B：邮件中最讨厌的事情是什么？
+	
+除了糟糕的阅读顺序，它还使得只引用原始邮件中的内容变的不可能。
 
-Apart from the screwed-up read order (especially when mixed together in a
-thread when someone responds using the mandated bottom-posting style), it also
-makes it impossible to quote only parts of the original mail.
+当你回复邮件时，如果你的邮件客户端插入了之前邮件的引用内容。请将光标移动到最下面，删除掉它们。如果你确实想加入一个引用内容，请在行中采用内联的方式去添加。
 
-When you reply to a mail you let the mail client insert the previous mail
-quoted. Then you put the cursor on the first line of the mail and you move
-down through the mail, deleting all parts of the quotes that don't add context
-for your comments. When you want to add a comment you do so, inline, right
-after the quotes that relate to your comment. Then you continue downwards
-again.
+当你编写完邮件并且删掉了所有的引用时，就大功告成了！
 
-When most of the quotes have been removed and you have added your own words,
-you are done!
+#### 不要发送HTML格式的邮件
 
-#### HTML is not for mails
+有些人为了美观，可能将邮件内容编写成一段HTML。你可以把它发送给你的朋友，但是请不要发送给我们。我们只需要纯净的文本格式邮件。
 
-Please switch off those HTML encoded messages. You can mail all those funny
-mails to your friends. We speak plain text mails.
+#### 引用
 
-#### Quoting
+尽量不要在邮件中引用其他内容，仅仅提供一些不可缺少的引用就足够了。你可以查阅[引用规范](https://www.netmeister.org/news/learn2quote.html)。
 
-Quote as little as possible. Just enough to provide the context you cannot
-leave out. A lengthy description can be found
-[here](https://www.netmeister.org/news/learn2quote.html).
+#### 摘要
 
-#### Digest
+我们允许订阅者们订阅邮件列表的"摘要"版本。摘要是把邮件集中在一起的一种集合。
 
-We allow subscribers to subscribe to the "digest" version of the mailing
-lists. A digest is a collection of mails lumped together in one single mail.
+你应该仔细考虑一下是否将回复的邮件作为一个摘要，如果你无法正常的订阅，那么你必须仔细考虑以下两种情形：
 
-Should you decide to reply to a mail sent out as a digest, there are two
-things you MUST consider if you really really cannot subscribe normally
-instead:
+阻止任何与你的问题无关的邮件。
 
-Cut off all mails and chatter that is not related to the mail you want to
-reply to.
+将主题名更改为与主题相关的敏感内容，最好是您想要回复的邮件的实际主题。
 
-Change the subject name to something sensible and related to the subject,
-preferably even the actual subject of the single mail you wanted to reply to.
+#### 描述你解决问题的思路
 
-#### Please tell us how you solved the problem!
+许多人把问题发送到邮件列表，人们花费一些时间并努力提供这些问题的最优解。
 
-Many people mail questions to the list, people spend some of their time and
-make an effort in providing good answers to these questions.
+如果你是提问者，在你的问题被解决之后，请回复我们你的问题已经被解决。解答的人感觉很好，因为他们提供了一个好的解决思路，从而你解决了问题。很多时候，提问者永远不会再被人提起，我们也永远不会知道他/她是否因为问题解决了或者问题无法解决而离开了。
 
-If you are the one who asks, please consider responding once more in case one
-of the hints was what solved your problems. The guys who write answers feel
-good to know that they provided a good answer and that you fixed the
-problem. Far too often, the person who asked the question is never heard of
-again, and we never get to know if he/she is gone because the problem was
-solved or perhaps because the problem was unsolvable!
+这样做也可以帮助其他遇到同样问题的用户。他们起码可以看到，这个解决思路是有效的。
 
-Getting the solution posted also helps other users that experience the same
-problem(s). They get to see (possibly in the web archives) that the suggested
-fixes actually has helped at least one person.
+
