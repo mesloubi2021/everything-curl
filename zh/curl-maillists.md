@@ -1,29 +1,21 @@
-## Mailing lists
+## 邮件列表
 
-Some of the most important mailing lists are…
+下面是一些重要的邮件列表
 
-### curl-users
+### curl-用户
 
-The main mailing list for users and developers of the curl command-line
-tool, for questions and help around curl concepts, command-line options, the
-protocols curl can speak or even related tools. We tend to move development
-issues or more advanced bug fixes discussions over to curl-library instead,
-since libcurl is the engine that drives most of curl.
+这个是主要负责curl命令行工具的邮件列表，你可以在这里提出问题，你还会在这里发现curl概念、命令参数、所支持网络协议、相关工具的帮助手册。但是自从libcurl库诞生之后，我们就将关于问题、建议、bug讨论这类的邮件转移至curl-library的邮件列表。
 
-See https://cool.haxx.se/mailman/listinfo/curl-users
+地址 https://cool.haxx.se/mailman/listinfo/curl-users
 
 ### curl-library
 
-The main development list, and also for users of libcurl. We discuss how to
-use libcurl in applications as well as development of libcurl itself. You will
-find lots of questions on libcurl behavior, debugging and documentation
-issues.
+这个是主要负责开发讨论的邮件列表。我们在这里讨论如何在应用中更好的集成使用libcurl库，你会在这里发现很多关于libcurl库的功能、测试、文档上的问题。
 
-See https://cool.haxx.se/mailman/listinfo/curl-library
+地址 https://cool.haxx.se/mailman/listinfo/curl-library
 
-### curl-announce
+### curl-公告
 
-This mailing list only gets announcements about new releases and security
-problems—nothing else. This one is for those who want a more casual feed of
-information from the project.
-https://cool.haxx.se/mailman/listinfo/curl-announce
+这个邮件列表只负责关于新版本和安全问题的内容。你可以很轻松的在这里获取curl的最新消息。
+
+地址 https://cool.haxx.se/mailman/listinfo/curl-announce
