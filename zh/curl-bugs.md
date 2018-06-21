@@ -1,82 +1,46 @@
-## Reporting bugs
 
-The development team does a lot of testing. We have a whole test suite that is
-run frequently every day on numerous platforms to in order to exercise all
-code and make sure everything works as supposed.
+## 问题提交
 
-Still, there are times when things aren't working the way they should. Then we
-appreciate getting those problems reported.
+开发团队进行了大量的测试。我们有一整套测试组件，每天会在各个平台上运行测试用例，确保所有功能可以正常运行。
 
-### A bug is a problem
+尽管如此，各种各样的问题还是会经常出现。所以，我们非常重视提交的问题。
 
-Any problem can be considered a bug. A weirdly phrased wording in the manual
-that prevents you from understanding something is a bug. A surprising side
-effect of combining multiple options can be a bug—or perhaps it should be
-better documented? Perhaps the option doesn't do at all what you expected it
-to? That's a problem and we should fix it!
+### 任何问题都可以视为bug
 
-### Problems must be known to get fixed
+任何问题都可以被认为是bug。譬如：把几个命令行选项组合使用后，出现的结果让你大跌眼镜，我们将其视为一个bug并进行记录，提交给我们，我们去解决它！
 
-This may sound easy and uncomplicated but is a fundamental truth in our and
-other projects. Just because it is an old project and have thousands of users
-doesn't mean that the development team knows about the problem you just fell
-over. Maybe users haven't paid enough attention to details like you, or
-perhaps it just never triggered for anyone else.
+### 必须了解问题才能解决问题
 
-We rely on users experiencing problems to report them. We need to learn the
-problems exist so that we can fix them.
+我们必须对问题具有充分的认识，才能将其修复。这听起来很简单，但却是软件开发项目的基本真理。即使curl是一个发布了很久并且拥有大量用户的项目，但并不意味着开发团队知道您刚刚遇到的问题。或许其他用户并没有像你这样如此关注细节，或许这个问题根本没有被其他人触发过。
 
-### Fixing the problems
+我们非常依赖用户提交的问题。我们需要了解存在的问题，以便我们能够解决它们。
 
-Software engineering is, to a very large degree, about fixing problems. To fix a
-problem a developer needs to understand how to repeat it and to do that the
-debugging person needs to be told what set of circumstances that made the
-problem trigger.
+### 解决问题
 
-### A good bug report
+软件开发就是一个不断debug的过程。要修复一个问题，开发人员需要了解如何复现这个问题，需要告诉调试人员是什么情况触发了这个问题。
 
-A good report explains what happened and what you thought was going to
-happen. Tell us exactly what versions of the different components you used and
-take us step by step through what you do to get the problem.
+### 一份规范的问题提交单
 
-After you submit a bug report, you can expect there to be follow-up
-questions or perhaps requests that you try out varies things and tasks in
-order for the developer to be able to narrow down the suspects and make sure
-your problem is being cornered in properly.
+一份规范的问题报告会阐述发生了什么。请确切地告诉我们您使用的不同组件的版本，并一步一步地告诉我们您是如何触发这个问题的。
 
-A bug report that is submitted but is abandoned by the submitter risks getting
-closed if the developer fails to understand it, fails to reproduce it or faces
-other problems when working on it. Don't abandon your report!
+提交问题报告后，还有一些后续工作需要您配合，或者可能会要求您尝试不同的事情和任务，以便开发人员能够缩小疑点，确保您的问题被恰当地解决。
 
-Report curl bugs in the [curl bug tracker on
+提交的问题报告有可能在开发人员无法理解、无法复制或在处理时面临其他问题时被关闭。但是请不要放弃你的报告!
+
+问题报告提交地址 [curl bug tracker on
 github](https://github.com/curl/curl/issues)!
 
-## Testing
+## 测试
 
-Testing software thoroughly and properly is a lot of work. Testing software
-that runs on dozens on operating systems and dozens of CPU architectures, with
-server implementations with their owns sets of bugs and interpretations of the
-specs, is even more work.
+软件测试是一项艰巨的工作。在不同的操作系统和不同的cup结构上运行软件，这意味着巨大的工作量。
 
-The curl project has a test suite that iterates over all existing
-test cases, runs the test and verifies that the outcome is the correct one
-and that no other problem happened, like a memory leak or something fishy in
-the protocol layer.
+curl项目拥有一个测试组件，可以运行所有的测试用例，确保没有故障产生，如"内存泄漏"等问题。
 
-The test suite is meant to be possible to run after you have built curl
-yourself and there are a fair number of volunteers who also help out by
-running the test suite automatically a few times per day to make sure the
-latest commits get a run. This way, we hopefully discover the worst flaws
-pretty soon after they were introduced.
+在您自己构建了curl之后，测试套件就可以运行了，并且有相当多的志愿者每天自动地运行几次测试套件，以确保最新的提交能够运行。这样，我们希望在他们被介绍后不久就能发现最坏的缺点。
 
-We don't test everything and even when we try to test things there will always
-be subtle details that get through and that we, sometimes years after the
-fact, figure out were wrong.
+我们无法去测试出所有的问题，即使我们有时去测试一些东西，也可能会因为各种原因而没有发现潜在的问题，有时时隔数年之久我们才能发现问题的存在。
 
-Due to the nature of different systems and funny use cases on the Internet,
-eventually some of the best testing is done by users when they run the code to
-perform their own use cases.
+由于不同的操作系统不同的cup架构以及网上有很多优秀的测试用例等原由，很多问题都是用户在运行自己的测试用例时发现的！
 
-Another limiting factor with the test suite is that the test setup itself is
-less portable than curl and libcurl so there are in fact platforms where curl
-runs fine but the test suite cannot execute at all.
+测试组件的另一个缺陷是它的可移植性不如curl和libcurl，有的平台根本无法正常的运行测试组件。
+
