@@ -1,45 +1,23 @@
-## Releases
 
-A release in the curl project means packaging up all the source code that is
-in the master branch of the code repository, signing the package, tagging the
-point in time in the code repository, and then putting it up on the web site for the
-world to download.
+### 发布
 
-It is one single source code archive for all platforms curl can run on. It is
-the one and only package for both curl and libcurl.
+curl发行版意味着对master分支中的所有代码进行打包签名，然后将其放到web站点上供全世界下载。
 
-We never ship any curl or libcurl _binaries_ from the project. All the
-packaged binaries that are provided with operating systems or on other
-download sites are done by gracious volunteers outside of the project.
+curl项目是跨平台的。
 
-As of a few years back, we make an effort to do our releases on an eight week
-cycle and unless some really serious and urgent problem shows up we stick to
-this schedule. We release on a Wednesday, and then again a Wednesday eight
-weeks later and so it continues. Non-stop.
+我们从不提供curl及libcurl的二进制可执行文件，互联网站点上提供的二进制打包文件都是由志愿者们完成的。
 
-For every release we tag the source code in the repository with "curl-release
-version" and we update the [changelog](https://curl.haxx.se/changes.html).
+curl项目的更新周期为2个月，意味着每两个都会发布一个最新版本的curl，从不间断。有时可能会为了修复一些紧急bug而提前发布最新版本
 
-We had done 172 curl releases by January 2018, and for all the ones made
-since late 1999 there are lots of release stats available in our [curl release
-log](https://curl.haxx.se/docs/releases.html).
+每一个版本的更新详情都罗列在[版本历史记录](https://curl.haxx.se/changes.html)。
 
-## Daily snapshots
+截止到2018年1月，我们已经发布了172版curl。从1999年至今，所有的发布记录都罗列在[发行历史文档](https://curl.haxx.se/docs/releases.html)。
 
-Every single change to the source code is committed and pushed to the source
-code repository. This repository is hosted on github.com and is using git
-these days (but hasn't always been this way). When building curl off the
-repository, there are a few things you need to generate and setup that
-sometimes cause people some problems or just friction. To help with that, we
-provide daily snapshots.
+## 每日快照
 
-The daily snapshots are generated daily (clever naming, right?) as if a
-release had been made at that point in time. It produces a package of all
-sources code and all files that are normally part of a release and puts it in
-a package and uploads it to a special place
-([https://curl.haxx.se/snapshots/](https://curl.haxx.se/snapshots/)) to allow
-interested people to get the very latest code to test, to experiment or
-whatever.
+curl项目目前托管在[GitHub](http://www.github.com/)。您在构建项目时，需要设置或者生成一些东西。我们提供了每日快照，便于您成功的构建项目。
 
-The snapshots are only kept for around 20 days until deleted.
+每日快照每天都会更新。里面包含了项目源代码以及构建时所必须的一些文件，您可以查看下载[每日快照](https://curl.haxx.se/snapshots/)用于测试研究。
+
+站点上的每日快照保存时间为20天。
 
