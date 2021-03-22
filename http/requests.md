@@ -58,7 +58,7 @@ you have to do it like this:
 A URL may contain an anchor, also known as a fragment, which is written with a
 pound sign and string at the end of the URL. Like for example
 `http://example.com/foo.html#here-it-is`. That fragment part, everything from
-the pound/hash sign to the end of the URL, is only intend for local use and
+the pound/hash sign to the end of the URL, is only intended for local use and
 will not be sent over the network. curl will simply strip that data off and
 discard it.
 
@@ -152,7 +152,7 @@ date, and you can of course also specify it complete with a time:
 curl can also get the time stamp off a local file as a shortcut. No need to
 download the file again if it has not changed on the server, right? If the
 string does not match a time or date, curl checks if there's a file named like
-that, and if so gets the time from it's modification time.
+that, and if so gets the time from its modification time.
 
     curl --time-cond file https://www.example.org/file.html -o file
 

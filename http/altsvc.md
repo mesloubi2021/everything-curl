@@ -2,7 +2,7 @@
 
 [RFC 7838](https://www.rfc-editor.org/rfc/rfc7838.txt) defines a HTTP header
 which lets a server tell a client that there is one or more *alternatives* for
-that server at "another place" with the use of the `Alt-Svc:` response ehader.
+that server at "another place" with the use of the `Alt-Svc:` response header.
 
 The *alternatives* the server suggests can include a server running on another
 port on the same host, on another completely different host name and it can
@@ -22,7 +22,7 @@ new or updated `Alt-Svc:` headers, curl will store those in the cache at exit.
 ## The alt-svc cache
 
 The alt-svc cache is very similar to a cookie jar. It is a text based file
-that stores one alternative per line and each entry also has an expiry time so
+that stores one alternative per line and each entry also has an expiry time
 for which duration that particular alternative is valid.
 
 ## HTTPS only

@@ -9,7 +9,7 @@ Here are some tricks and advice on how to proceed when doing this.
 
 ## Figure out what the browser does
 
-This is really a necessary first step. Second-guessing what it does risk having
+This is really a necessary first step. Second-guessing what it does risks having
 you chase down the wrong problem rat-hole. The scientific approach to this
 problem pretty much requires that you first understand what the browser does.
 
@@ -25,7 +25,7 @@ what HTTP operations it performs.
 The [Copy as curl](usingcurl-copyas.md) section describes how you can record a
 browser's request and easily convert that to a curl command line.
 
-Those copied curl command lines are often not Good enough though since they
+Those copied curl command lines are often not good enough though since they
 tend to copy *exactly* that request, while you probably want to be a bad bit
 more dynamic so that you can reproduce the same operation and not just resend
 the verbatim request.
@@ -77,7 +77,7 @@ tag anyway, you could do something like this first:
 
     curl -c cookies https://example.com/ -o loginform
 
-You would often need a HTML parser or some script language to extract the id
+You would often need a HTML parser or some scripting language to extract the id
 field from there and then you can proceed and login as mentioned above, but
 with the added cookie loading (I'm splitting the line into two lines to make
 it more readable):
