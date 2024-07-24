@@ -116,7 +116,7 @@ if/while conditions we prefer:
     if(!result) {
       /* something went wrong */
       return result;
-}
+    }
 
 ## No assignments in conditions
 
