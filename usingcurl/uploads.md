@@ -57,20 +57,20 @@ You send off an HTTP upload using the -T option with the file to upload:
 
     curl -T uploadthis http://example.com/
 
-## FTP uploads
+## FTP and SFTP uploads
 
-Working with FTP, you get to see the remote file system you are accessing.
-You tell the server exactly in which directory you want the upload to be
-placed and which filename to use. If you specify the upload URL with a
+Working with FTP and SFTP, you get to see the remote file system you are
+accessing. You tell the server exactly in which directory you want the upload
+to be placed and which filename to use. If you specify the upload URL with a
 trailing slash, curl appends the locally used filename to the URL and then
 that becomes the filename used when stored remotely:
 
     curl -T uploadthis ftp://example.com/this/directory/
 
-So if you prefer to select a different filename on the remote side than what
-you have used locally, you specify it in the URL:
+FTP and SFTP also support *appending* to the target file when uploading
+instead of overwriting, with the `--append` option:
 
-    curl -T uploadthis ftp://example.com/this/directory/remotename
+    curl -T uploadthis --append ftp://example.com/directory/remotename
 
 Learn much more about FTPing in the [FTP with curl](../ftp/) section.
 
@@ -96,3 +96,18 @@ support can output something even for an upload.
 Therefore, you may need to explicitly redirect the downloaded data to a file
 (using shell redirect '>', `-o` or similar) to get the progress meter
 displayed for upload.
+
+## Globbing
+
+curl also supports [globbing](../cmdline/urls/globbing.md) in the `-T`
+argument so you can opt to easily upload a range of files:
+
+    curl -T 'image[1-99].jpg' ftp://ftp.example.com/upload/
+
+or a series of files:
+
+    curl -T '{file1,file2}' https://example.com/upload/
+
+or
+
+    curl -T '{Huey,Dewey,Louie}.jpg' ftp://ftp.example.com/nephews/

@@ -1,6 +1,7 @@
 %{json}
 --alt-svc
 --anyauth
+--append
 --basic
 --ca-native
 --compressed
@@ -32,6 +33,7 @@
 --http3-only
 --ipfs-gateway
 --json
+--keepalive-cnt
 --keepalive-time
 --libcurl
 --limit-rate
@@ -46,7 +48,9 @@
 --no-clobber
 --no-eprt
 --no-epsv
+--no-keepalive
 --ntlm
+--output-dir
 --parallel
 --parallel-immediate
 --parallel-max
@@ -252,6 +256,9 @@ CURLOPT_SSL_VERIFYPEER
 CURLOPT_SSLVERSION
 CURLOPT_STDERR
 CURLOPT_TCP_KEEPALIVE
+CURLOPT_TCP_KEEPCNT
+CURLOPT_TCP_KEEPIDLE
+CURLOPT_TCP_KEEPINTVL
 CURLOPT_TIMEOUT
 CURLOPT_TLSAUTH_USERNAME
 CURLOPT_UPLOAD

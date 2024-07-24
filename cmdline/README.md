@@ -17,16 +17,14 @@ protocol communications and you can have curl massage your server
 implementations in the most creative ways.
 
   * [Differences](differences.md)
-  * [Command line options](options.md)
+  * [Command line options](options/)
   * [Options depend on version](versions.md)
   * [URLs](urls/)
-  * [URL globbing](globbing.md)
   * [List options](listopts.md)
   * [Config file](configfile.md)
   * [Variables](variables.md)
   * [Passwords](passwords.md)
   * [Progress meter](progressmeter.md)
   * [Version](curlver.md)
-  * [Persistent connections](persist.md)
   * [Exit code](exitcode.md)
   * [Copy as curl](copyas.md)

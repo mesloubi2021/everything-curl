@@ -1,7 +1,7 @@
 # Compression
 
-curl allows you to ask HTTP and HTTPS servers to provide compressed versions
-of the data and then perform automatic decompression of it on arrival. In
+curl supports asking HTTP and HTTPS servers to provide compressed versions of
+the data and then perform automatic decompression of it on arrival. In
 situations where bandwidth is more limited than CPU this helps you receive
 more data in a shorter amount of time.
 
@@ -31,9 +31,6 @@ command line, although in practice, you may experience that some servers
 get a little confused when asked to compress in two different ways. It is
 generally safer to just pick one.
 
-For SCP and SFTP transfers, there is `--compressed-ssh`. It compresses all
-traffic in either direction.
-
 ## HTTP headers
 
 HTTP/1.x headers cannot be compressed. HTTP/2 and HTTP/3 headers on the other
@@ -41,7 +38,10 @@ hands are always compressed and cannot be sent uncompressed. However, as a
 convenience to users, curl always shows the headers uncompressed in a style
 similar to how they look for HTTP/1.x to make the output and look consistent.
 
-## Uploads
+## HTTP uploads
 
-For HTTP there is no standard way to do compression. The above mentioned HTTP
-compression methods only work for downloads.
+For HTTP uploads with POST or PUT there is no standard way to do compression.
+The above mentioned HTTP compression methods only work for downloads.
+
+You can of course still compress the data locally before sending it to the
+server.
