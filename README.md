@@ -144,7 +144,4 @@ Wayne Lai,
 Wieland Hoffmann,
 谭九鼎
 
-## License
 
-This document is licensed under the [Creative Commons Attribution 4.0
-license](https://creativecommons.org/licenses/by/4.0/).
